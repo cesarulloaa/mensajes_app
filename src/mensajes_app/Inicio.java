@@ -18,8 +18,8 @@ public class Inicio {
 			System.out.println("Aplicacion de mensajes");
 			System.out.println("1. Crear mensaje");
 			System.out.println("2. Listar mensaje");
-			System.out.println("3. Editar mensaje");
-			System.out.println("4. Eliminar mensaje");
+			System.out.println("3. Eliminar mensaje");
+			System.out.println("4. Editar mensaje");
 			System.out.println("5. Salir");
 			// Leer la opcion del usuario
 			opcion = sc.nextInt();
@@ -37,14 +37,15 @@ public class Inicio {
 
 				break;
 			case 3:
-				// Llamada al metodo editarMensaje de la clase MensajesService para editar un
-				// mensaje
-				MensajesService.editarMensaje();
-				break;
-			case 4:
-				// Llamada al metodo borrarMensaje de la clase MensajesService para eliminar un
+				// Llamada al metodo editarMensaje de la clase MensajesService para eliminar un
 				// mensaje
 				MensajesService.borrarMensaje();
+				
+				break;
+			case 4:
+				// Llamada al metodo borrarMensaje de la clase MensajesService para editar un
+				// mensaje
+				MensajesService.editarMensaje();
 				break;
 			default:
 				break;
